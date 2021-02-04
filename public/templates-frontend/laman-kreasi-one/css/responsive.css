@@ -1,0 +1,189 @@
+/* =====================================
+Template Name: School Laman
+Author Name: Kodir Zaelani
+Description: School Laman is a multipurpose education html5 template. This template is perfect for any education purpose.
+Version:	1.0
+========================================*/
+/* Tablet Layout */
+@media (max-width: 1024px) {
+    section.main-profil .principle-image img{
+        max-width: 100%;
+    }
+}
+@media (min-width: 766px) and (max-width: 991px) {
+   header.main-banner .header-logo {
+        display: none;
+   } 
+   .main-banner .banner-content h2{
+       font-weight: 600;
+   } 
+   .main-banner .banner-content h4{
+       font-weight: 400;
+   } 
+   .main-banner .banner-content p{
+       font-weight: 300;
+   } 
+   .profile-content iframe{
+    height: 300px;
+    }
+
+    .principle-title h4{
+        font-size: 16px;
+    }
+
+    section.main-profil .principle h3, p,
+    .profile-content .video-link
+    {
+        padding-top: 10px;
+    }
+    section.main-profil .principle-image img{
+        max-width: 100%;
+    }
+
+    .items-headline a{
+        font-size: 10px;
+    }
+    .portfolio .section-title {
+        padding: 0 85px;
+    }
+    .portfolio.column .section-title {
+        padding: 0 50px;
+    }
+}
+/* Mobile Layout */
+@media (max-width: 767px) {
+    header.main-banner .header-logo {
+        display: none;
+   }
+   .text-inner .call-text h2{
+    font-size: 20px;
+   }
+   .main-banner {
+       padding-top: 70px;
+   }
+   .main-banner .banner-content h2{
+       font-weight: 300;
+       font-size: 20px;
+       display: none;
+   } 
+   .main-banner .banner-content h4{
+       font-weight: 200;
+       font-size: 20px;
+   } 
+   .main-banner .banner-content p{
+       font-weight: 100;
+       font-size: 14px;
+   } 
+   .main-banner .banner-images img{
+    max-width: 10%;
+    /* display: none; */
+    }   
+   section.main-profil{
+     padding-top: 40px;
+     padding-bottom: 40px;
+    }
+
+    .profile-content iframe{
+        height: 250px;
+    }
+    section.main-profil .principle-image img{
+        max-width: 70%;
+    }
+    .principle{
+        padding-top: 30px;
+    }
+    section.main-profil .principle h3, p,
+    .profile-content .video-link
+    {
+        padding-top: 10px;
+    }
+
+    .items-headline {
+        display: none;
+    }
+    .carousel-item h5{
+        font-size: 16px;
+    }
+    .portfolio .section-title {
+        padding: 0 5px;
+    }
+    .portfolio.column .section-title {
+        padding: 0;
+    }
+    .portfolio .portfolio-nav {
+        margin: 10px 0 50px;
+    }
+    .portfolio #portfolio-menu li {
+        margin-top: 10px !important;
+    }
+    .portfolio.single .single-slider {
+        width: 100%;
+        height: 200px;
+    }
+    .portfolio.single .content h2 {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 360px) {
+    header.main-banner .header-logo {
+        display: none;
+    } 
+    .main-banner .banner-content h2{
+        font-weight: 350;
+        font-size: 16px;
+    } 
+    .main-banner .banner-content h4{
+        font-weight: 200;
+        font-size: 20px;
+    } 
+    .main-banner .banner-content p{
+        font-weight: 100;
+        font-size: 14px;
+    } 
+    
+    .main-banner .banner-images img{
+        max-width: 10%;
+        /* display: none; */
+        }  
+
+    section.main-profil .principle h3, p,
+    .profile-content .video-link
+    {
+        padding-top: 10px;
+    }
+    .carousel-item h5{
+        font-size: 16px;
+    }
+}
+/* Mobile Layout */
+@media (max-width: 320px) {
+    header.main-banner .header-logo {
+        display: none;
+    } 
+    .main-banner .banner-content h2{
+        font-weight: 350;
+        font-size: 16px;
+    } 
+    .main-banner .banner-content h4{
+        font-weight: 200;
+        font-size: 18px;
+    } 
+    .main-banner .banner-content p{
+        font-weight: 100;
+        font-size: 12px;
+    } 
+    
+    .main-banner .banner-images img{
+        max-width: 10%;
+        /* display: none; */
+        } 
+    
+    .profile-content iframe{
+        height: 200px;
+    }	
+
+    .carousel-item h5{
+        font-size: 16px;
+    }
+}
