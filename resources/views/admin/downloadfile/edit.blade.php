@@ -78,17 +78,12 @@
                                     
                                     <div class="form-group" id="sh2" >
                                         <label for="linkfile">Link File Embed</label>
-                                        <textarea name="linkfile" id="linkfile" class="form-control @error('linkfile') is-invalid @enderror"  rows="5" placeholder="Enter a contact link file">{{ old('linkfile') ?? $downloadfile->linkfile }}</textarea>
-                                        
+                                        <input id="linkfile" name="linkfile" type="linkfile"   class="form-control @error('linkfile') is-invalid @enderror" value="{{ old('title') ?? $downloadfile->linkfile}}"><br>
+                                        <span>example : https://drive.google.com/file/d/11aULn0IWM-X0GxhIjqBYa0GntnDDjYxO/view </span>
+                                        {{-- <textarea name="linkfile" id="linkfile" class="form-control @error('linkfile') is-invalid @enderror"  rows="5" placeholder="Enter a contact link file">{{ old('linkfile') ?? $downloadfile->linkfile }}</textarea> --}}
                                         @error('linkfile')
                                         <span class="invalid-feedback">{{ $message }}</span>
                                         @enderror
-                                    </div>
-                                    <div class="form-group">
-                                        <label for="">Current Embed</label>
-                                        <div>
-                                            {!! $downloadfile->linkfile !!}
-                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-md-12"> 

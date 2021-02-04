@@ -82,13 +82,15 @@
                                     </div>
                                     
                                     <div class="form-group" id="sh2" style="display:none;">
-                                        <label for="linkfile">Link File Embed</label>
-                                        <textarea name="linkfile" id="linkfile" class="form-control @error('linkfile') is-invalid @enderror"  rows="5" placeholder="Enter a contact link file">{{ old('linkfile') }}</textarea>
-                                        
+                                        <label for="linkfile">Link File </label>
+                                        <input id="linkfile" name="linkfile" type="linkfile"   class="form-control @error('linkfile') is-invalid @enderror" ><br>
+                                        <span>example : https://drive.google.com/file/d/11aULn0IWM-X0GxhIjqBYa0GntnDDjYxO/view </span>
+                                        {{-- <textarea name="linkfile" id="linkfile" class="form-control @error('linkfile') is-invalid @enderror"  rows="5" placeholder="Enter a contact link file">{{ old('linkfile') }}</textarea> --}}
                                         @error('linkfile')
                                         <span class="invalid-feedback">{{ $message }}</span>
                                         @enderror
                                     </div>
+                                </div>
                                 </div>
                                 <div class="col-md-12"> 
                                     <button class="btn btn-primary">Save</button>
