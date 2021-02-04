@@ -156,7 +156,7 @@ class PageController extends Controller
     public function update(Request $request, Page $page)
     {
         $validateData = [
-            'title' => 'required|min:3|unique:pages,title,except,id',
+            'title' => 'required|min:3',
             'categorypage_id'   => 'required',
             'content'       => 'required',
         ];
