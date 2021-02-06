@@ -4,6 +4,7 @@
 <p>Bagi yang mau mengembangkan silahkan dapat digunakan, Semoga bermanfaat </p>
 <p>Untuk database data dilakukan degan menjalankan php artisan migrate</p>
 <p>Untuk isi database data dilakukan degan menjalankan php artisan db:seed</p>
+<p>Jika tidak menjalankan migrate dan seeder, sudah disiapkan contoh database ada pada /app/database/master_db/db_bloglaravel8-2.sql. silahkan tinggal import</p>
 <p>jika ada yang mau didiskusikan silahkan kirim email ke kodir.zaelani78@gmial.com</p>
 
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
