@@ -27,7 +27,7 @@
                 {{-- </div> --}}
                 <div class="col-md-8 col-lg-8 col-12">
                     @if (count($posts))
-                    <div class="row justify-content-center">
+                     <div class="row justify-content-center">
                         @foreach ($posts as $post)
                         <div class="col-md-6 col-lg-6 col-12 mb-4">
                             <div class="card h-100 shadow-sm border-0 rounded-lg">
@@ -60,9 +60,7 @@
                             </div>
                             @endforeach
                         <!-- end berita section -->
-                        @else
-                        <h2 class="fw-bold" style="color:red">Nothing Post Found</h2>
-                        @endif
+                        
                     </div>
                     <div class="row pt-5 justify-content-center">
                         <div class="col-12">
@@ -73,6 +71,9 @@
                             <!--/ End Pagination -->
                         </div>
                     </div>	
+                    @else
+                        <h2 class="fw-bold" style="color:red">Nothing Post Found</h2>
+                    @endif
                 </div>
                 <div class="col-md-4 col-lg-4 col-12">
                     <!-- Blog Sidebar -->

@@ -63,9 +63,7 @@
                                 </div>
                         </div>
                             @endforeach
-                            @else
-                            <h2 class="fw-bold" style="color:red">Nothing Result</h2>
-                            @endif
+                           
                         </div>
                         <div class="pt-5 row justify-content-center">
                             <div class="col-12">
@@ -75,7 +73,10 @@
                                 </div>
                                 <!--/ End Pagination -->
                             </div>
-                        </div>	
+                        </div>
+                        @else
+                        <h2 class="fw-bold" style="color:red">Nothing Result</h2>
+                        @endif	
                     </div>
                     <div class="col-md-4 col-lg-4 col-12">
                         <!-- Blog Sidebar -->
