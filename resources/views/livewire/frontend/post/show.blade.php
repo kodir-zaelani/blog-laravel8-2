@@ -30,6 +30,14 @@
                                         @endif
                                         
                                     </div>
+                                    @if ($post->caption_image)
+                                        <div class="row justify-content-center">
+                                            <div class="col-10 text-center">
+                                                <span>{!! $post->caption_image !!}</span>
+                                                <hr>
+                                            </div>
+                                        </div> 
+                                    @endif
                                     <div class="card-body">
                                         <h2 class="card-title">{{ $post->title}}</h2>
                                         <div class="blog-meta">

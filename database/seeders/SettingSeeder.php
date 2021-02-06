@@ -17,6 +17,8 @@ class SettingSeeder extends Seeder
         Setting::create([
             'title' => 'Laman Kreasi',
             'tagline' => 'Belajar menulis dan berkreasi',
+            'website' => 'www.lamankreasi.com',
+            'email' => 'laman.kreasi@gmail.com',
             'description' => 'Melalui website ini semoga dapat menjadi sarana upaya peningkatan kompetensi',
             ]);
     }
