@@ -13,34 +13,39 @@
         </div>
     </div>
     <!-- Blog Archive -->
-    <section class="blogs grid-sidebar archive section" style="background-color:#edf2f7">
+    <section class="section-detail">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                  <h3 class="font-weight-bold mb-3 text-uppercase">ARTIKEL DENGAN KUNCI PENCARIAN " {{ $searchterm }} "</h3><hr>
+                    <h3 class="font-weight-bold mb-3 text-uppercase">ARTIKEL DENGAN KUNCI PENCARIAN " {{ $searchterm }} "</h3><hr>
                 </div>
-            </div>
+              </div>
             <div class="row">
+                {{-- <div class="alert alert-info"> --}}
+                    {{--  <livewire:frontend.post.alert />  --}}
+                    {{-- <p>Tag name: <strong>{{ $tag_name}}</strong></p> --}}
+                {{-- </div> --}}
                 <div class="col-md-8 col-lg-8 col-12">
-                    <div class="row">
-                        @if (count($posts))
+                    @if (count($posts))
+                    <div class="row justify-content-center">
                         @foreach ($posts as $post)
                         <div class="col-md-6 col-lg-6 col-12 mb-4">
                             <div class="card h-100 shadow-sm border-0 rounded-lg">
                                 <div class="card-img">
                                     @if ($post->ImageThumbUrl)
-                                    <a href="{{ route('post.show', $post) }}"><img src="{{ $post->ImageThumbUrl }}" class="card-img-top" alt="{{ $post->title }}" class="w-100"></a>   
+                                    <a href="{{ route('post.show', $post) }}"><img src="{{ $post->ImageThumbUrl }}" class="card-img-top" alt="{{ $post->title }}" class="w-100">
+                                    </a>   
                                     @else
                                     <a href="{{ route('post.show', $post) }}"><img src="{{ url('') }}/assets/help/img/edu5.jpeg" class="card-img-top" alt="{{ $post->title }}" 
                                         class="w-100"></a>
                                         @endif
-                                        
                                     </div>
                                     <div class="card-body">
                                         @if ($post->tags_html )
                                         <p> <i class="fa fa-tags mr-2"></i> {!! $post->tags_html !!}</p>
                                         @endif
                                         <h4><a href="{{ route('post.show', $post) }}">{{ $post->title }}</a></h4>
+
                                     </div>
                                     <div class="card-footer bg-white">
                                         <span class="author">
@@ -54,7 +59,8 @@
                                 </div>
                             </div>
                             @endforeach
-                           
+                        <!-- end berita section -->
+                        
                     </div>
                     <div class="row pt-5 justify-content-center">
                         <div class="col-12">
@@ -66,20 +72,21 @@
                         </div>
                     </div>	
                     @else
-                    <h2 class="fw-bold" style="color:red">Nothing Result</h2>
+                    <h2 class="fw-bold" style="color:red">Nothing Post Found</h2>
                     @endif
                 </div>
                 <div class="col-md-4 col-lg-4 col-12">
                     <!-- Blog Sidebar -->
-                    @livewire('frontend.main.sidebarpopular')
                     @livewire('frontend.main.sidebarcategory')
-                    @livewire('frontend.main.sidebartags')
-                    {{-- @livewire('frontend.main.sidebarphoto') --}}
+                    @livewire('frontend.main.sidebarpopular')
+                    @livewire('frontend.main.sidebartags') --}}
+                    {{-- @livewire('frontend.main.sidebarphoto')
                     <!--/ End Blog Sidebar -->
                 </div>
             </div>
         </div>
     </section>
+   
     <!--/ End Blog Archive -->
     <!-- Newsletter -->
     {{--  <livewire:main.newsletter></livewire:main.newsletter>  --}}
