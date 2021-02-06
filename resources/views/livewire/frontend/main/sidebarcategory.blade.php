@@ -37,10 +37,6 @@
                             <img src="{{ $item->imageThumbUrl }}" 
                             style="width: 50px;height: 50px" 
                             class="img-fluid rounded-circle mr-2" />
-                            @else
-                            <img src="{{ url('') }}/assets/help/img/edu5.jpeg"" 
-                            style="width: 50px;height: 50px" 
-                            class="img-fluid rounded-circle mr-2" />
                             @endif
                         </span> 
                             {{ $item->title }}
